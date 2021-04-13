@@ -43,6 +43,9 @@ header {
     width: 100%;
     display: block;
     margin-bottom: 23px;
+    
+    z-index: 2;
+    position: relative;
 }
 
 img {
@@ -76,10 +79,16 @@ article > h1 {
     font-size: 20px;
     margin-bottom: 23px;
     line-height: 1.5em;
+    
+    z-index: 2;
+    position: relative;
 }
 
 article > p {
     opacity: 70%;
+
+    z-index: 2;
+    position: relative;
 }
 
 #daniel-review {
@@ -217,4 +226,12 @@ article > p {
         width: 100%;
         display: block;
     }
+}
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: calc(100% * 0.2628107981 - 61.97183097px);
+    z-index: 1;
 }
